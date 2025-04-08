@@ -16,5 +16,5 @@ nav>ul>li>a{display: block;width: 120px;text-align: center;font-weight: bold;pad
 .slide{height: 300px;}
 .contents{height: 200px;display: flex;}
 .contents article{width: 400px;}
-.contents .gall{}
+.contents .gall
 footer{height: 100px;}
