@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* 헤더 스타일 */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e3a8a; /* 참고 양식의 파란색 */
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+/* 메뉴 스타일 */
+.menu {
+  position: relative; /* z-index를 적용하기 위해 position 설정 */
+  z-index: 20; /* 슬라이드보다 높은 값 */
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu > ul > li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  display: block;
+}
+
+.menu > ul > li > a:hover {
+  background-color: #f0f0f0;
+  color: #0066cc;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000;
+  display: none;
+  min-width: 600px; /* 가로로 출력되므로 너비를 넓게 설정 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 20;
+  display: flex; /* 가로 출력 */
+  flex-direction: row; /* 가로 방향 명시 */
+}
+
+.submenu li {
+  position: relative; /* 하위 메뉴를 위한 위치 설정 */
+  display: inline-block; /* 가로로 출력 */
+}
+
+.submenu li a {
+  color: #fff;
+  padding: 10px 20px;
+  display: block;
+}
+
+.submenu li a:hover {
+  background-color: #1e3a8a;
+  color: #fff;
+}
+
+/* 하위 서브메뉴 스타일 */
+.submenu li:hover .sub-submenu {
+  display: block; /* 호버 시 하위 메뉴 표시 */
+}
+
+.sub-submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000;
+  display: none;
+  min-width: 150px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 20;
+}
+
+.sub-submenu li {
+  display: block; /* 세로로 출력 */
+}
+
+.sub-submenu li a {
+  color: #fff;
+  padding: 10px 20px;
+  display: block;
+}
+
+.sub-submenu li a:hover {
+  background-color: #1e3a8a;
+  color: #fff;
+}
+
+/* 슬라이드 스타일 */
+.slide {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  background-color: #000; /* 빈 공간 방지를 위해 검은색 배경 추가 */
+  z-index: 10; /* 메뉴보다 낮은 값 */
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.slide img:first-child {
+  left: 0;
+}
+
+/* 배너 스타일 */
+.banner {
+  width: 50%;
+  height: 200px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 메인 레이아웃 */
+main {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* 공지사항 스타일 */
+.notice {
+  width: 25%;
+  padding: 10px;
+}
+
+.notice h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.notice ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notice li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.notice li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.notice li a:hover {
+  color: #0066cc;
+}
+
+.notice li span {
+  color: #666;
+}
+
+/* SNS 스타일 */
+.sns {
+  width: 25%;
+  padding: 10px;
+}
+
+.sns h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.sns-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sns-links img {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+/* 푸터 스타일 */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-links a:hover {
+  color: #f0f0f0;
+}
+
+.footer-copyright p {
+  margin: 0;
+  font-size: 0.9em;
+}
