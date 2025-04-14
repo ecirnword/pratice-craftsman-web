@@ -35,14 +35,14 @@ body {
 
 header {
     height: 100px;
-    background: #036;
+    background: #f7f7f7;
 }
 
 header .inner {
     width: 1200px;
     margin: auto;
     height: 100%;
-    background: #036;
+    background: #f7f7f7;
     padding-top: 30px;
     position: relative;
 }
@@ -67,12 +67,12 @@ nav>ul>li>a {
     width: 150px;
     text-align: center;
     padding: 10px;
-    color: #fff;
+    color: #000;
+    font-weight: bold;
 }
 
 nav>ul>li:hover>a {
-    background: #f4d01f;
-    color: #036;
+    border-bottom: 5px inset #ff5115;
 }
 
 .sub {
@@ -84,18 +84,18 @@ nav>ul>li:hover>a {
     text-align: center;
     padding: 10px 0;
     font-size: 14px;
-    color: #fff;
+    color: #000;
 }
 
 .sub a:hover {
-    background: #036;
-    color: #fff;
+    background: rgba(#f7f7f7, 0.8);
+    color: #000;
 }
 
 .menubg {
     width: 100%;
     height: 160px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     position: absolute;
     top: 100px;
     left: 0;
@@ -135,8 +135,8 @@ nav>ul>li:hover>a {
 }
 
 .slide ul li h2 {
-    color: #036;
-    text-shadow: 0 5px 10px #fff;
+    color: #fff;
+    text-shadow: 0 3px 3px #ff5115;
     font-size: 35px;
     position: absolute;
     top: 50%;
@@ -168,12 +168,13 @@ nav>ul>li:hover>a {
 
 .tabmenu>li {
     width: 150px;
-    background: #d3d3d3;
+    background: #e7e7e7;
 }
 
 .tabmenu>li.on {
-    background: #036;
+    background: #ff5115;
     color: #fff;
+    border-radius: 5px 5px 0 0;
 }
 
 .tabmenu>li>h2>a {
@@ -186,9 +187,10 @@ nav>ul>li:hover>a {
     position: absolute;
     left: 0;
     width: 100%;
-    background: #036;
+    background: #ff5115;
     padding: 5px;
     height: 140px;
+    border-radius: 5px 20px 10px 20px;
 }
 
 /* .notice{display: none;} */
@@ -248,7 +250,7 @@ nav>ul>li:hover>a {
 }
 
 .banner h2 {
-    color: #036;
+    color: #000;
     margin-bottom: 10px;
 }
 
@@ -257,19 +259,20 @@ nav>ul>li:hover>a {
     height: 130px;
     background: url(../images/banner.jpg) center/cover;
     border-radius: 30px;
-    color: #fff;
+    color: #ff5115;
+    font-weight: bold;
     overflow: hidden;
 }
 
 .banner div {
-    background: rgba(0, 51, 102, 0.8);
+    background: rgba(255, 247, 248, 0.8);
     height: 100%;
     padding: 20px;
 }
 
 .banner div h3 {
     margin-bottom: 10px;
-    color: #f4d01f;
+    color: #000;
 }
 
 .banner div h3 span {
@@ -281,7 +284,7 @@ nav>ul>li:hover>a {
 }
 
 .go h2 {
-    color: #036;
+    color: #000;
     margin-bottom: 20px;
 }
 
@@ -300,7 +303,7 @@ nav>ul>li:hover>a {
 .go ul li p {
     width: 80px;
     height: 80px;
-    background: #036;
+    background: #ff5115;
     border-radius: 20px;
     padding-top: 20px;
     margin-bottom: 10px;
@@ -313,13 +316,13 @@ nav>ul>li:hover>a {
 
 footer {
     height: 120px;
-    background: #666;
+    background: #252b36;
 }
 
 footer .inner {
     width: 1200px;
     margin: auto;
-    background: #666;
+    background: #252b36;
     height: 100%;
     display: flex;
     gap: 30px;
@@ -333,6 +336,7 @@ footer .inner {
 .fmenu {
     display: flex;
     gap: 10px;
+    color: #fff;
 }
 
 .fmenu li {
@@ -348,6 +352,7 @@ footer .inner {
 .fcopy {
     font-size: 14px;
     margin-top: 10px;
+    color: #fff;
 }
 
 
